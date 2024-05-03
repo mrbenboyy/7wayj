@@ -21,8 +21,10 @@ use Illuminate\Support\Str;
 class BrandResource extends Resource
 {
     protected static ?string $model = Brand::class;
+    protected static ?int $navigationSort = 2;
 
     protected static ?string $navigationIcon = 'heroicon-o-square-3-stack-3d';
+    protected static ?string $recordTitleAttribute = 'name';
 
     public static function form(Form $form): Form
     {
