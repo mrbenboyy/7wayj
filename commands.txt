@@ -40,3 +40,5 @@ install sweet alerts(toasts):			composer require jantinnerezo/livewire-alert
 
 configurer stripe:				.env file => STRIPE_SECRET = secret key
 						composer require stripe/stripe-php
+
+send email to customer after success:		php artisan make:mail OrderPlaced --markdown=mail.orders.placed

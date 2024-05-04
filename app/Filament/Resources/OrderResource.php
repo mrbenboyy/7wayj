@@ -56,7 +56,7 @@ class OrderResource extends Resource
                         Select::make('payment_status')
                             ->options([
                                 'pending' => 'Pending',
-                                'payed' => 'Payed',
+                                'paid' => 'paid',
                                 'failed' => 'Failed'
                             ])
                             ->default('pending')

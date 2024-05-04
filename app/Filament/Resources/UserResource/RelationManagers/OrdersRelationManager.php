@@ -52,7 +52,7 @@ class OrdersRelationManager extends RelationManager
                         'processing' => 'heroicon-m-arrow-path',
                         'shipped' => 'heroicon-m-truck',
                         'delivered' => 'heroicon-m-check-badge',
-                        'cancelled' => 'heroicon-m-x-cicrle'
+                        'cancelled' => 'heroicon-m-x-circle'
                     })
                     ->sortable(),
 

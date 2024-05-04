@@ -45,7 +45,7 @@ class LatestOrders extends BaseWidget
                         'processing' => 'heroicon-m-arrow-path',
                         'shipped' => 'heroicon-m-truck',
                         'delivered' => 'heroicon-m-check-badge',
-                        'cancelled' => 'heroicon-m-x-cicrle'
+                        'cancelled' => 'heroicon-m-x-circle'
                     })
                     ->sortable(),
 
@@ -62,8 +62,8 @@ class LatestOrders extends BaseWidget
             ])
             ->actions([
                 Action::make('View Order')
-                ->url(fn(Order $record):string=>OrderResource::getUrl('view', ['record'=>$record]))
-                ->icon('heroicon-m-eye')
+                    ->url(fn(Order $record): string => OrderResource::getUrl('view', ['record' => $record]))
+                    ->icon('heroicon-m-eye')
             ]);
     }
 }
