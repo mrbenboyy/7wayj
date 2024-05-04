@@ -1,5 +1,3 @@
-<!-- https://gist.github.com/goodreds/5b8a4a2bf11ff67557d38c5e727ea86c -->
-
 <div
     class="max-w-2xl mx-4 sm:max-w-sm md:max-w-sm lg:max-w-sm xl:max-w-sm sm:mx-auto md:mx-auto lg:mx-auto xl:mx-auto mt-16 bg-white shadow-xl rounded-lg text-gray-900 mb-14">
     <div class="rounded-t-lg h-32 overflow-hidden">
@@ -17,29 +15,29 @@
     </div>
     <ul class="py-4 mt-2 text-gray-700 flex items-center justify-around">
         <li class="flex flex-col items-center justify-around">
-            <p>Total Orders</p>
+            <p class="text-blue-900">Total Orders</p>
             <div>{{ $total_orders }}</div>
         </li>
         <li class="flex flex-col items-center justify-between">
-            <p>Total Spent</p>
+            <p class="text-blue-900">Total Spent</p>
             <div>{{ Number::currency($total_spent, 'MAD') }}</div>
         </li>
         <li class="flex flex-col items-center justify-between">
-            <p>Delivered Orders</p>
+            <p class="text-blue-900">Delivered Orders</p>
             <div>{{ $delivered }}</div>
         </li>
     </ul>
     <ul class="py-4 mt-2 text-gray-700 flex items-center justify-around">
         <li class="flex flex-col items-center justify-around">
-            <p>Paid Orders</p>
+            <p class="text-blue-900">Paid Orders</p>
             <div>{{ $paid_orders }}</div>
         </li>
         <li class="flex flex-col items-center justify-around">
-            <p>Pending Orders</p>
+            <p class="text-blue-900">Pending Orders</p>
             <div>{{ $pending_orders }}</div>
         </li>
         <li class="flex flex-col items-center justify-around">
-            <p>Failed Orders</p>
+            <p class="text-blue-900">Failed Orders</p>
             <div>{{ $failed_orders }}</div>
         </li>
     </ul>
